@@ -68,7 +68,7 @@ Apps Used: Ticket System, Order Database, Email
 ---
 ## Installation & Setup
 
-### 1. Git Clone 
+### 1. Git Clone https://github.com/mayybh08/TrustForge
 
 ### 2. pip install -r requirements.txt
 
