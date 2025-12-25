@@ -78,9 +78,9 @@ Apps Used: Ticket System, Order Database, Email
 
 ---
 ## Example Commands 
-Onboard new client Rahul and schedule a call
-Approve travel expense of 2000 rupees
-Resolve refund ticket for order 123
+### 1. Onboard new client Rahul and schedule a call
+### 2. Approve travel expense of 2000 rupees
+### 3. Resolve refund ticket for order 123
 
 **Output:** Step-by-step execution display with real-time status updates
 
