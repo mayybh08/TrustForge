@@ -1,59 +1,97 @@
-# TrustForge
-TrustForge is an autonomous AI engine that transforms natural language into multi-step, verifiable workflows. By bridging the gap between LLM reasoning and real-world execution, we move beyond "chatting" to a system that actually does the work.
+# TrustForge: Where Agentic AI Meets On-Chain Integrity
 
-# Problem
-Manual Friction: Humans must manually bridge data between disconnected apps (SaaS, Databases, APIs).
+---
 
-Static AI: Most AI tools can only talk; they lack the autonomy to perform sequences of actions.
+## Overview
+A **Universal AI Agent** that understands natural language commands and automatically executes complex, multi-app workflows without human intervention.
 
-Trust Deficit: No transparent record exists to prove why an AI performed a specific sensitive action.
+###  Key Features
 
-# Solution 
-Our project bridges the gap between AI "chatting" and AI "doing" by creating a Verifiable Agentic Workforce.
+- **Natural Language Processing** - Describe tasks in plain English
+- **Multi-App Orchestration** - Seamlessly integrates Gmail, Calendar, Sheets, CRM, and more
+- **Intelligent Workflow Planning** - Breaks down complex tasks into sequential steps
+- **Self-Correcting AI Agent** - Detects errors and retries failed steps automatically
+- **Audit Trail** - Complete logging of all actions with blockchain-ready hash generation
+- **Time Efficiency** - Reduces 20-40 minute tasks to under 1 minute
 
-Autonomous Reasoning: Powered by the Weilliptic SDK, the agent breaks down high-level goals into logical, multi-step execution plans without human guidance.
+---
+## Problem
+Enterprise workflows require constant app-switching:
 
-Universal Tool Access: Uses the Model Context Protocol (MCP) to interact with any database (CockroachDB) or app (Slack/Gmail) via a standardized, plug-and-play interface.
+- Manually juggling Email, Calendar, Sheets, CRM, Ticketing tools
+- **Time-consuming**: Average 20-40 minutes per task
+- **Error-prone**: High risk during manual data transfer
+- **Fragmented**: No single system for end-to-end automation
 
-Immutable Trust: Every agent decision and action is anchored on-chain, providing a tamper-proof audit trail that proves exactly why and how a task was completed.
+**Result:** Massive productivity loss and operational inefficiency
 
-Real-time Transparency: The Icarus Platform visualizes the agent's thought process live, turning "Black Box" AI into a transparent, observable workflow.
+---
+## Solution
+Our agent provides **one-command automation**:
 
-# Tech Stack
-Frontend: Next.js / Tailwind CSS (Dashboard & Chat UI).
+User: "Onboard new client Rahul and schedule a call"
 
-Backend: Node.js / TypeScript (Service orchestration).
+Agent Executes:
+1. Create CRM entry ✓
+2. Update onboarding spreadsheet ✓
+3. Schedule calendar meeting ✓
+4. Send confirmation email ✓
+5. Generate audit hash ✓
 
-AI/ML: Weilliptic SDK (Agentic logic) + Gemini 3 (Reasoning).
+Time: < 1 minute (vs 30 minutes manual)
 
-Protocol: Model Context Protocol (MCP) (Standardized tool-calling).
+---
+## Architecture Flow
+Natural Language Input → Intent Detection → Workflow Planning (MCP) 
+→ App Orchestration → Sequential Execution → Audit Logging
 
-Database: CockroachDB (Distributed data storage).
+---
+## Tech Stack
+**Backend:** Node.js, Express  
+**AI/NLP:** Claude API (Anthropic), MCP (Model Context Protocol)  
+**Frontend:** React (Web UI) / Commander.js (CLI)  
+**Integrations (Mock):** Gmail API, Google Calendar, Sheets, CRM  
+**Logging:** Winston, Simulated Blockchain Audit
 
-Infrastructure: Icarus Platform (Deployment & Visualization).
+---
+## Supported Workflows
 
-Trust Layer: WeilChain (On-chain audit logging).
+### 1. Client Onboarding
+Apps Used: CRM, Sheets, Calendar, Email
 
-# Key Features
-1.Autonomous Intent Planning: Uses the Weilliptic SDK to decompose complex natural language into logical, multi-step execution chains without human intervention.
+### 2. Expense Approval
+Apps Used: Receipt Verification, Policy Engine, Finance Sheet, Email
 
-2.Plug-and-Play Interoperability: Leverages MCP (Model Context Protocol) to instantly connect and command diverse tools like CockroachDB, Slack, and GitHub through a unified interface.
+### 3. Customer Support Resolution
+Apps Used: Ticket System, Order Database, Email
 
-3.Verifiable On-Chain Audits: Anchors every agent "thought" and API action to the blockchain, creating a tamper-proof, transparent record of the entire workflow.
+---
+## Installation & Setup
 
-# Installation & Setup
-1.Clone the Repository
+### 1. Git Clone 
 
-2.Install Dependencies
+### 2. pip install -r requirements.txt
 
-3.Configure Environment Variables:
-          ~Create a new .env file by copying the template:
-          ~Open the .env file and enter your actual API keys (Weilliptic, LLM, etc.).
+### 3. cd TrustForge
 
-4.Run the Project
+### 4. npm start , npm run cli 
 
-# The Team
-1. Mayuri Bhaladhare (Team Leader)
-2. Khushi Meshram
-3. Amruta Bedre
-4. Purva Khandare
+---
+## Example Commands 
+Onboard new client Rahul and schedule a call
+Approve travel expense of 2000 rupees
+Resolve refund ticket for order 123
+
+**Output:** Step-by-step execution display with real-time status updates
+
+
+---
+## Team
+
+- **Project Lead** - Mayuri Bhaladhare
+- **AI/ML Engineer** - Khushi Meshram
+- **Backend Developer** - Purva Khandare
+- **Frontend Developer** - Amruta Bedre
+
+
+
