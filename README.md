@@ -1,80 +1,81 @@
-# TrustForge: Where Agentic AI Meets On-Chain Integrity
+# TrustForge: Agentic Workflow Execution with Audit-Ready Integrity
 
 ---
 
 ## Overview
-A **Universal AI Agent** that understands natural language commands and automatically executes complex, multi-app workflows without human intervention.
+TrustForge is an early-stage prototype demonstrating how agentic AI workflows can interpret natural language commands and execute multi-step system actions with transparent logging and audit readiness.
+
+This project is built as a Round-1 functional prototype, focusing on execution logic, workflow planning, and traceability rather than full production integrations.
 
 ###  Key Features
 
-- **Natural Language Processing** - Describe tasks in plain English
-- **Multi-App Orchestration** - Seamlessly integrates Gmail, Calendar, Sheets, CRM, and more
-- **Intelligent Workflow Planning** - Breaks down complex tasks into sequential steps
-- **Self-Correcting AI Agent** - Detects errors and retries failed steps automatically
-- **Audit Trail** - Complete logging of all actions with blockchain-ready hash generation
-- **Time Efficiency** - Reduces 20-40 minute tasks to under 1 minute
+-**Natural Language Commands** – Simple English instructions
+-**Multi-Step Agentic Execution** – Commands broken into sequential steps
+-**Command Execution Engine** – Executes system-level or mocked service actions
+-**Self-Recovery Logic** – Retries failed steps automatically
+-**Audit-Ready Logging** – Generates execution hashes for traceability
 
+Fast Automation – Demonstrates reduction of manual effort
 ---
 ## Problem
-Enterprise workflows require constant app-switching:
+Modern automation workflows suffer from:
 
-- Manually juggling Email, Calendar, Sheets, CRM, Ticketing tools
-- **Time-consuming**: Average 20-40 minutes per task
-- **Error-prone**: High risk during manual data transfer
-- **Fragmented**: No single system for end-to-end automation
+-Manual coordination across multiple tools
+-High execution time (20–40 minutes per task)
+-Error-prone handoffs between systems
+-Lack of transparent execution records
 
-**Result:** Massive productivity loss and operational inefficiency
+**Result**: Low productivity and limited trust in automation systems.
 
 ---
 ## Solution
-Our agent provides **one-command automation**:
+TrustForge demonstrates one-command workflow execution using an agentic approach.
 
-User: "Onboard new client Rahul and schedule a call"
+Example Input:
 
-Agent Executes:
-1. Create CRM entry ✓
-2. Update onboarding spreadsheet ✓
-3. Schedule calendar meeting ✓
-4. Send confirmation email ✓
-5. Generate audit hash ✓
+Onboard new client Rahul and schedule a call
 
-Time: < 1 minute (vs 30 minutes manual)
+**Agent Execution Flow**:
+-Parse intent
+-Plan workflow steps
+-Execute commands sequentially
+-Retry on failure
+-Generate audit log hash
 
+Execution Time: < 1 minute (prototype simulation)
 ---
 ## Architecture Flow
-Natural Language Input → Intent Detection → Workflow Planning (MCP) 
-→ App Orchestration → Sequential Execution → Audit Logging
+Natural Language Input
+→ Intent Detection
+→ Workflow Planning
+→ Step-by-Step Execution
+→ Logging & Audit Hash Generation
+
+This architecture aligns with multi-step agentic workflow principles and is designed to be extended using platforms like Weilliptic SDK and Icarus in future stages.
 
 ---
 ## Tech Stack
-**Backend:** Node.js, Express  
-**AI/NLP:** Claude API (Anthropic), MCP (Model Context Protocol)  
-**Frontend:** React (Web UI) / Commander.js (CLI)  
-**Integrations (Mock):** Gmail API, Google Calendar, Sheets, CRM  
-**Logging:** Winston, Simulated Blockchain Audit
+-**Backend**: Node.js
+-**Agent Logic**: Rule-based + command execution
+-**Interface**: CLI-based execution
+-**Integrations**: Mocked services (for demo purposes)
+-**Logging**: Structured logs + simulated on-chain hash
+
+**Note**: External services and blockchain components are intentionally mocked for Round-1 evaluation.
 
 ---
 ## Supported Workflows
+-Client onboarding (simulated)
 
-### 1. Client Onboarding
-Apps Used: CRM, Sheets, Calendar, Email
+-Expense approval (simulated)
 
-### 2. Expense Approval
-Apps Used: Receipt Verification, Policy Engine, Finance Sheet, Email
-
-### 3. Customer Support Resolution
-Apps Used: Ticket System, Order Database, Email
-
+-Support ticket resolution (simulated)
 ---
 ## Installation & Setup
-
-### 1. Git Clone https://github.com/mayybh08/TrustForge
-
-### 2. pip install -r requirements.txt
-
-### 3. cd TrustForge
-
-### 4. npm start , npm run cli 
+-git clone https://github.com/mayybh08/TrustForge
+-cd TrustForge
+-npm install
+-npm run cli
 
 ---
 ## Example Commands 
@@ -82,9 +83,21 @@ Apps Used: Ticket System, Order Database, Email
 ### 2. Approve travel expense of 2000 rupees
 ### 3. Resolve refund ticket for order 123
 
-**Output:** Step-by-step execution display with real-time status updates
+**Output:**Step-by-step execution logs with success/failure status and audit hash.
+---
+## Hackathon Context:
+**This repository represents a Round-1 prototype submission demonstrating:**
 
+-Agentic workflow execution
+-Sequential command orchestration
+-Auditability foundations
 
+**Planned Enhancements (Next Rounds):**
+
+-Weilliptic SDK integration
+-Deployment on Icarus
+-On-chain verification
+-Real API integrations
 ---
 ## Team
 
